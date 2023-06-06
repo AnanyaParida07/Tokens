@@ -7,7 +7,7 @@ import Iter "mo:base/Iter";
 actor Token {
     let owner : Principal = Principal.fromText("hr5h7-eyrtt-6zw23-kpo2l-kshp5-xm45c-orhwv-ls55o-qd53j-aqklu-mae");
     let totalSupply : Nat = 1000000000;
-    let symbol : Text = "D_ANA";
+    let symbol : Text = "D-ANA";
 
     private stable var balanceEntries : [(Principal, Nat)] = [];
     private var balances = HashMap.HashMap<Principal, Nat>(1, Principal.equal, Principal.hash);
